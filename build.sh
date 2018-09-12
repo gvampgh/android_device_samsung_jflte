@@ -7,6 +7,7 @@ rm -rf kernel/samsung/jf
 rm -rf external/tinycompress
 rm -rf hardware/qcom/gps
 rm -rf hardware/libhardware
+rm -rf external/perfetto
 
 #Fix display's fetch
 repo sync kernel/samsung/jf
@@ -35,6 +36,12 @@ repo sync hardware/libhardware
 cd hardware/libhardware
 git fetch https://github.com/LineageOS/android_hardware_libhardware refs/changes/97/223097/2 && git cherry-pick FETCH_HEAD
 git fetch https://github.com/LineageOS/android_hardware_libhardware refs/changes/81/223681/1 && git cherry-pick FETCH_HEAD
+cd ../..
+
+#fix perfetto
+repo sync external/perfetto
+cd external/perfetto
+git fetch https://github.com/LineageOS/android_external_perfetto refs/changes/13/223413/1 && git cherry-pick FETCH_HEAD
 cd ../..
 
 . build/envsetup.sh
