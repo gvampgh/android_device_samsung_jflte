@@ -27,7 +27,7 @@ git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/48
 git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/49/223349/2 && git cherry-pick FETCH_HEAD
 git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/50/223350/2 && git cherry-pick FETCH_HEAD
 git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/97/223397/2 && git cherry-pick FETCH_HEAD
-
+cd ../../..
 
 . build/envsetup.sh
 make clean
