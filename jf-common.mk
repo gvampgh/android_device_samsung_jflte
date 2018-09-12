@@ -148,7 +148,12 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libqcomvoiceprocessing
+    libqcomvoiceprocessing \
+    libtinycompress \
+    tinyplay \
+    tinycap \
+    tinymix \
+    tinypcminfo
 
 # Bluetooth
 PRODUCT_PACKAGES += \
