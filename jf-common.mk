@@ -148,12 +148,7 @@ PRODUCT_PACKAGES += \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
-    libqcomvoiceprocessing \
-    libtinycompress \
-    tinyplay \
-    tinycap \
-    tinymix \
-    tinypcminfo
+    libqcomvoiceprocessing
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -171,8 +166,8 @@ PRODUCT_PACKAGES += \
     memtrack.msm8960
 
 # Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+#PRODUCT_PACKAGES += \
+#    SamsungDoze
 
 # FlipFlap
 PRODUCT_PACKAGES += \
