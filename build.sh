@@ -9,6 +9,7 @@ rm -rf hardware/qcom/gps
 rm -rf hardware/libhardware
 rm -rf external/perfetto
 rm -rf device/lineage/sepolicy
+rm -rf system/core
 
 #Fix display's fetch
 repo sync kernel/samsung/jf
@@ -51,6 +52,12 @@ cd device/lineage/sepolicy
 git fetch https://github.com/LineageOS/android_device_lineage_sepolicy refs/changes/15/225115/2 && git cherry-pick FETCH_HEAD
 git fetch https://github.com/LineageOS/android_device_lineage_sepolicy refs/changes/45/225945/1 && git cherry-pick FETCH_HEAD
 cd ../../..
+
+#fix system core
+repo sync system/core
+cd system/core
+git fetch https://github.com/LineageOS/android_system_core refs/changes/64/224264/2 && git cherry-pick FETCH_HEAD
+cd ../..
 
 . build/envsetup.sh
 make clean
