@@ -6,6 +6,7 @@ cd ../../..
 rm -rf kernel/samsung/jf
 rm -rf external/tinycompress
 rm -rf hardware/qcom/gps
+rm -rf hardware/libhardware
 
 #Fix display's fetch
 repo sync kernel/samsung/jf
@@ -28,6 +29,12 @@ git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/49
 git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/50/223350/2 && git cherry-pick FETCH_HEAD
 git fetch https://github.com/LineageOS/android_hardware_qcom_gps refs/changes/97/223397/2 && git cherry-pick FETCH_HEAD
 cd ../../..
+
+#fix libhardware
+repo sync hardware/libhardware
+cd hardware/libhardware
+git fetch https://github.com/LineageOS/android_hardware_libhardware refs/changes/97/223097/2 && git cherry-pick FETCH_HEAD
+cd ../..
 
 . build/envsetup.sh
 make clean
