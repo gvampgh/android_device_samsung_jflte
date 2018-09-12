@@ -59,10 +59,21 @@ cd system/core
 git fetch https://github.com/LineageOS/android_system_core refs/changes/64/224264/2 && git cherry-pick FETCH_HEAD
 #legacy usb
 git fetch https://github.com/LineageOS/android_system_core refs/changes/94/223394/1 && git cherry-pick FETCH_HEAD
-#https://review.lineageos.org/#/c/LineageOS/android_system_core/+/204506/3/libsuspend/Android.bp
+#early suspend
+#git fetch https://github.com/LineageOS/android_system_core refs/changes/43/219443/1 && git cherry-pick FETCH_HEAD
 cd ../..
 
-. build/envsetup.sh
-make clean
-lunch lineage_jflte-userdebug
-make -j10 otapackage
+echo ""
+echo "DID U UPDATE THE EARLY SUSPEND?????"
+echo ""
+select choice in "Yes" "No"; do
+	case $choice in
+		Yes ) 
+			. build/envsetup.sh
+			make clean
+			lunch lineage_jflte-userdebug
+			make -j10 otapackage
+		No ) break;;
+	esac
+done
+
