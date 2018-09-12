@@ -1,3 +1,7 @@
+cd device/samsung/jf-common
+git branch -D opt-cm-16.0
+git checkout -b opt-cm-16.0
+cd ../../..
 
 rm -rf kernel/samsung/jf
 rm -rf external/tinycompress
