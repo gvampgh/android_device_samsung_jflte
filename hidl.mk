@@ -89,7 +89,7 @@ PRODUCT_PACKAGES += \
 
 # USB HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.0-service.basic
 
 # Vibrator HIDL
 PRODUCT_PACKAGES += \
