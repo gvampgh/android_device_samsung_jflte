@@ -34,6 +34,7 @@ cd ../../..
 repo sync hardware/libhardware
 cd hardware/libhardware
 git fetch https://github.com/LineageOS/android_hardware_libhardware refs/changes/97/223097/2 && git cherry-pick FETCH_HEAD
+git fetch https://github.com/LineageOS/android_hardware_libhardware refs/changes/81/223681/1 && git cherry-pick FETCH_HEAD
 cd ../..
 
 . build/envsetup.sh
