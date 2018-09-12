@@ -125,7 +125,6 @@ BOARD_HARDWARE_CLASS += $(COMMON_PATH)/lineagehw
 
 # Display
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-TARGET_DISPLAY_USE_RETIRE_FENCE := true
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
