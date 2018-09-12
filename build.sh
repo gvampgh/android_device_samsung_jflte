@@ -57,6 +57,9 @@ cd ../../..
 repo sync system/core
 cd system/core
 git fetch https://github.com/LineageOS/android_system_core refs/changes/64/224264/2 && git cherry-pick FETCH_HEAD
+#legacy usb
+git fetch https://github.com/LineageOS/android_system_core refs/changes/94/223394/1 && git cherry-pick FETCH_HEAD
+#https://review.lineageos.org/#/c/LineageOS/android_system_core/+/204506/3/libsuspend/Android.bp
 cd ../..
 
 . build/envsetup.sh
