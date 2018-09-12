@@ -61,6 +61,8 @@ git fetch https://github.com/LineageOS/android_system_core refs/changes/64/22426
 git fetch https://github.com/LineageOS/android_system_core refs/changes/94/223394/1 && git cherry-pick FETCH_HEAD
 #early suspend
 #git fetch https://github.com/LineageOS/android_system_core refs/changes/43/219443/1 && git cherry-pick FETCH_HEAD
+# it needs to convert the goto out -> return 0;
+# add -Wno-implicit-function-declaration , -Wno-int-conversion
 cd ../..
 
 echo ""
