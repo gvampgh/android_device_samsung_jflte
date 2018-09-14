@@ -228,7 +228,7 @@ select choice in "Yes" "No"; do
 			make clean
 			lunch lineage_jflte-userdebug
 			make -j10 otapackage
-		No ) break;;
+		No ) exit
 	esac
 done
 
