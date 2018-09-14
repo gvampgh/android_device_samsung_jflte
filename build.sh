@@ -218,6 +218,11 @@ repopick -c 18 225451; # vold: Also wait for dm device when mounting private vol
 repopick -c 18 225452; # secdiscard: should pin_file to avoid moving blocks in F2FS
 
 
+#fix out the legacy sound
+sed -i 's/ENODEV/19/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy.cpp
+sed -i 's/ENOSYS/38/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy.cpp
+
+
 echo ""
 echo "DID U UPDATE THE EARLY SUSPEND?????"
 echo ""
