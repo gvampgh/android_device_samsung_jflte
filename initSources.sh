@@ -223,17 +223,3 @@ sed -i 's/ENODEV/19/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy
 sed -i 's/ENOSYS/38/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy.cpp
 
 
-echo ""
-echo "DID U UPDATE THE EARLY SUSPEND?????"
-echo ""
-select choice in "Yes" "No"; do
-	case $choice in
-		Yes ) 
-			
-			make clean
-			lunch lineage_jflte-userdebug
-			make -j10 otapackage
-		No ) exit
-	esac
-done
-
