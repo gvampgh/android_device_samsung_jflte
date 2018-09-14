@@ -113,11 +113,11 @@ repopick -c 14 226656; # Load bluetooth firmwares from /vendor
 repopick -c 14 226658; # Don't build libbt-hidlclient for OSS builds
 # hardware/qcom/gps
 
-repopick -c 29 223347; # msm8960: Add support for IPV6 in AGPS Interface
-repopick -c 29 223348; # msm8960: Default apn ip type to ipv4
-repopick -c 29 223349; # gps: msm8960: Cleanup obsolete LOCAL_PRELINK_MODULE
-repopick -c 29 223350; # gps: msm8960: Move device dependent modules to /vendor
-repopick -c 29 223397; # msm8960: Return the correct length of nmea sentence
+#repopick -c 29 223347; # msm8960: Add support for IPV6 in AGPS Interface
+#repopick -c 29 223348; # msm8960: Default apn ip type to ipv4
+#repopick -c 29 223349; # gps: msm8960: Cleanup obsolete LOCAL_PRELINK_MODULE
+#repopick -c 29 223350; # gps: msm8960: Move device dependent modules to /vendor
+#repopick -c 29 223397; # msm8960: Return the correct length of nmea sentence
 
 # hardware/qcom/wlan-caf
 
