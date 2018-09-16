@@ -121,18 +121,18 @@ repopick 225687; # PowerMenuConstants: Add user logout as new global action
 repopick 225581; # lineage-sdk: Make styles init at system services ready
 
 # packages/apps/Camera2
-repopick -c 13 224752; # Use mCameraAgentNg for getting camera info when available
-repopick -c 13 225255; # Camera2: Target API 27
-repopick -c 13 225256; # Don't attempt to convert degree to orientation enum twice
-repopick -c 13 225257; # Camera2: Only autofocus before a snap if we are actually in "auto" mode.
-repopick -c 13 225258; # Camera2: Remove settings preferences only once
-repopick -c 13 225259; # Camera2: Stop using GPS when going to background
-repopick -c 13 225260; # Camera: Powerkey shutter (2/2)
-repopick -c 13 225261; # Camera2: Add option to set max screen brightness
-repopick -c 13 225262; # Camera2: Remove google help preference
-repopick -c 13 225263; # Camera2: Fix Undo button behaviour
-repopick -c 13 225264; # Fix crash if Exif-Tag buffer-length and component-count are both 0
-repopick -c 13 225265; # Add Storage preference (1/2)
+#repopick -c 13 224752; # Use mCameraAgentNg for getting camera info when available
+#repopick -c 13 225255; # Camera2: Target API 27
+#repopick -c 13 225256; # Don't attempt to convert degree to orientation enum twice
+#repopick -c 13 225257; # Camera2: Only autofocus before a snap if we are actually in "auto" mode.
+#repopick -c 13 225258; # Camera2: Remove settings preferences only once
+#repopick -c 13 225259; # Camera2: Stop using GPS when going to background
+#repopick -c 13 225260; # Camera: Powerkey shutter (2/2)
+#repopick -c 13 225261; # Camera2: Add option to set max screen brightness
+#repopick -c 13 225262; # Camera2: Remove google help preference
+#repopick -c 13 225263; # Camera2: Fix Undo button behaviour
+#repopick -c 13 225264; # Fix crash if Exif-Tag buffer-length and component-count are both 0
+#repopick -c 13 225265; # Add Storage preference (1/2)
 
 # packages/apps/DeskClock
 repopick 225281; # DeskClock: Add back flip and shake actions
