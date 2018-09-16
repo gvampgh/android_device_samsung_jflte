@@ -81,7 +81,7 @@ repopick 225546; # AppOpsManager: Update with the new ops
 
 # hardware/libhardware
 repopick 223097; # hardware/libhw: Add display_defs.h to declare custom enums/flags
-repopick 223681; # power hints
+repopick -f 223681; # power hints
 
 # hardware/qcom/audio
 repopick 222693; # msm8960: treblize configuration
