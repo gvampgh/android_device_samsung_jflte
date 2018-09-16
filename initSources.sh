@@ -178,7 +178,7 @@ repopick 225423; # Add support to force disable enhanced sco commands
 repopick 224813; # bt: osi: undef PROPERTY_VALUE_MAX
 
 ##### # packages/providers/MediaProvider
-repopick 225412; # Fix mounting of non-FAT formatted SD cards (2/2)  
+#repopick 225412; # Fix mounting of non-FAT formatted SD cards (2/2)  
 
 ##### # packages/services/Telephony
 repopick 225418; # Telephony: Add ERI configuration for U.S. Cellular  
