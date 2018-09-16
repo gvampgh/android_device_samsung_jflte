@@ -3,14 +3,7 @@ git branch -D opt-cm-16.0
 git checkout -b opt-cm-16.0
 cd ../../..
 
-
 . build/envsetup.sh
-
-#Fix display's fetch
-repo sync kernel/samsung/jf
-cd kernel/samsung/jf
-git revert 0839a020cbf23313df050b9d1ccd16ae0a76cdf6
-cd ../../..
 
 
 #repo picks
