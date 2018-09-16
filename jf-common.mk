@@ -245,6 +245,10 @@ PRODUCT_PACKAGES += \
     init.spectrum.sh \
     ueventd.qcom.rc
 
+# USB HIDL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.jf
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
