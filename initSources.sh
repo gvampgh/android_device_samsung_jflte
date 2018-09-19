@@ -149,7 +149,7 @@ repopick -c 18 225570; # Settings: Add LineageParts charging sound settings pref
 repopick -c 18 225755; # Settings: Hide AOSP theme-related controllers
 repopick -c 18 225756; # Settings: fix dark style issues
 repopick -c 18 226154; # fingerprint: Allow devices to configure sensor location
-repopick -c 18 225858; # storage: Do not allow eject for volumes on non-removable disks
+#repopick -c 18 225858; # storage: Do not allow eject for volumes on non-removable disks
 repopick -c 18 227120; # Settings: Check interfaces before enabling ADB over network
 
 # packages/providers/MediaProvider
