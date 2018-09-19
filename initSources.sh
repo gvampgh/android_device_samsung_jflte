@@ -68,7 +68,7 @@ repopick -c 30 226068; # Fix mounting of non-FAT formatted SD cards (1/2)
 
 # frameworks/native
 repopick 224443; # libbinder: Don't log call trace when waiting for vendor service on non-eng builds
-repopick 225545; # Forward port 'Swap volume buttons' (2/3)
+#repopick 225545; # Forward port 'Swap volume buttons' (2/3)
 repopick 225546; # AppOpsManager: Update with the new ops
 
 # hardware/libhardware
