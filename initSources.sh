@@ -42,28 +42,28 @@ repopick 225539; # Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCa
 repopick 225540; # Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
 
 # frameworks/base
-repopick -c 30 225682; # Framework: Volume key cursor control
-repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook
+#repopick -c 30 225682; # Framework: Volume key cursor control
+#repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook
 #repopick -c 30 225684; # Long-press power while display is off for torch
-repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
-repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
-repopick -c 30 225702; # Camera: allow camera to use power key as shutter
-repopick -c 30 225721; # Reimplement hardware keys custom rebinding
-repopick -c 30 226249; # fw/b: Allow customisation of navbar app switch long press action
+#repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
+#repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
+#repopick -c 30 225702; # Camera: allow camera to use power key as shutter
+#repopick -c 30 225721; # Reimplement hardware keys custom rebinding
+#repopick -c 30 226249; # fw/b: Allow customisation of navbar app switch long press action
 #repopick -c 30 225722; # Reimplement device hardware wake keys support
-repopick -c 30 225726; # PhoneWindowManager: Tap volume buttons to answer call
-repopick -c 30 225727; # PhoneWindowManager: Implement press home to answer call
-repopick -c 30 225728; # Camera button support
-repopick -c 30 225729; # Framework: Forward port Long press back to kill app (2/2)
-repopick -c 30 225734; # Allow screen unpinning on devices without navbar
-repopick -c 30 226236; # SystemUI: add navbar button layout inversion tuning
-repopick -c 30 225859; # storage: Do not notify for volumes on non-removable disks
-repopick -c 30 226276; # power: Re-introduce custom charging sounds
-repopick -c 30 224844; # lockscreen: Add option for showing unlock screen directly
-repopick -c 30 225754; # SystemUI: Berry styles
-repopick -c 30 225582; # [TEMP]: Revert "OMS: harden permission checks"
-repopick -c 30 224446; # SystemUI: Make tablets great again
-repopick -c 30 224513; # SystemUI: Disable config_keyguardUserSwitcher on sw600dp
+#repopick -c 30 225726; # PhoneWindowManager: Tap volume buttons to answer call
+#repopick -c 30 225727; # PhoneWindowManager: Implement press home to answer call
+#repopick -c 30 225728; # Camera button support
+#repopick -c 30 225729; # Framework: Forward port Long press back to kill app (2/2)
+#repopick -c 30 225734; # Allow screen unpinning on devices without navbar
+#repopick -c 30 226236; # SystemUI: add navbar button layout inversion tuning
+#repopick -c 30 225859; # storage: Do not notify for volumes on non-removable disks
+#repopick -c 30 226276; # power: Re-introduce custom charging sounds
+#repopick -c 30 224844; # lockscreen: Add option for showing unlock screen directly
+#repopick -c 30 225754; # SystemUI: Berry styles
+#repopick -c 30 225582; # [TEMP]: Revert "OMS: harden permission checks"
+#repopick -c 30 224446; # SystemUI: Make tablets great again
+#repopick -c 30 224513; # SystemUI: Disable config_keyguardUserSwitcher on sw600dp
 repopick -c 30 226068; # Fix mounting of non-FAT formatted SD cards (1/2)
 
 # frameworks/native
