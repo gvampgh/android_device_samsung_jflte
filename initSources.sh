@@ -45,7 +45,7 @@ repopick 225540; # Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock
 repopick -c 30 225682; # Framework: Volume key cursor control
 repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook
 #repopick -c 30 225684; # Long-press power while display is off for torch
-repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
+#repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
 repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
 repopick -c 30 225702; # Camera: allow camera to use power key as shutter
 repopick -c 30 225721; # Reimplement hardware keys custom rebinding
