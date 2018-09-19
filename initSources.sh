@@ -11,15 +11,10 @@ cd ../../..
 repopick 223067; # libc fortify: Ignore open() O_TMPFILE mode bits warning
 repopick 223943; # bionic: meh
 
-# bootable/recovery
-repopick 225588; # recovery: updater: Fix SymlinkFn args
-
 # build/make
 repopick 222733; # core: Disable vendor restrictions
 repopick 222760; # Add LOCAL_AIDL_FLAGS
 
-# build/soong
-#repopick 224613; # soong: Add LOCAL_AIDL_FLAGS handling
 
 # dalvik
 repopick 225475; # dexdeps: Add option for --include-lineage-classes.
@@ -49,7 +44,7 @@ repopick 225540; # Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock
 # frameworks/base
 repopick -c 30 225682; # Framework: Volume key cursor control
 repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook
-repopick -c 30 225684; # Long-press power while display is off for torch
+#repopick -c 30 225684; # Long-press power while display is off for torch
 repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
 repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
 repopick -c 30 225702; # Camera: allow camera to use power key as shutter
