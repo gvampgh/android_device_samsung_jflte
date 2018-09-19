@@ -163,10 +163,6 @@ repopick 223945; # Prevent abort in case of command timeout
 repopick 225423; # Add support to force disable enhanced sco commands
 repopick 224813; # bt: osi: undef PROPERTY_VALUE_MAX
 
-##### # packages/services/Telephony
-repopick 225418; # Telephony: Add ERI configuration for U.S. Cellular  
-repopick 225420; # Use proper summary for network select list preference on dsds/dsda/tsts  
-
 # system/core
 repopick 223085; # adbd: Disable "adb root" by system property (2/3)
 repopick 223500; # Add back fuse support
