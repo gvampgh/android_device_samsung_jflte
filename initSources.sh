@@ -108,7 +108,6 @@ repopick -c 12 227449; # libbt-vendor: Fix BLUETOOTH_MAC_ADDR_BOOT_PROPERTY defi
 repopick -c 12 227450; # libbt-vendor: Add missing vendor prefix to a bluetooth.status prop  
 
 # lineage-sdk
-repopick 225687; # PowerMenuConstants: Add user logout as new global action
 repopick 225581; # lineage-sdk: Make styles init at system services ready
 
 # packages/apps/Camera2
