@@ -19,7 +19,7 @@ repopick 222733; # core: Disable vendor restrictions
 repopick 222760; # Add LOCAL_AIDL_FLAGS
 
 # build/soong
-repopick 224613; # soong: Add LOCAL_AIDL_FLAGS handling
+#repopick 224613; # soong: Add LOCAL_AIDL_FLAGS handling
 
 # dalvik
 repopick 225475; # dexdeps: Add option for --include-lineage-classes.
@@ -47,32 +47,29 @@ repopick 225539; # Camera:CameraService: Added lock on mHIDLMemPoolId in QDataCa
 repopick 225540; # Camera: CameraHardwareInterface: Releasing mHIDLMemoryMapLock in QdataCallback
 
 # frameworks/base
-#repopick -c 30 225983; # Runtime toggle of navbar  
-#repopick -c 30 225682; # Framework: Volume key cursor control  
-#repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook  
-#repopick -c 30 225684; # Long-press power while display is off for torch  
-#repopick -c 30 225691; # SystemUI: Don't vibrate on touchscreen camera gesture  
-#repopick -c 30 225692; # framework: move device key handler logic, fix gesture camera launch  
-#repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing  
-#repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)  
-#repopick -c 30 225702; # Camera: allow camera to use power key as shutter  
-#repopick -c 30 225721; # Reimplement hardware keys custom rebinding  
-#repopick -c 30 226249; # fw/b: Allow customisation of navbar app switch long press action  
-#repopick -c 30 225722; # Reimplement device hardware wake keys support  
-#repopick -c 30 225726; # PhoneWindowManager: Tap volume buttons to answer call  
-#repopick -c 30 225727; # PhoneWindowManager: Implement press home to answer call  
-#repopick -c 30 225728; # Camera button support  
-#repopick -c 30 225729; # Framework: Forward port Long press back to kill app (2/2)  
-#repopick -c 30 225734; # Allow screen unpinning on devices without navbar  
-#repopick -c 30 226236; # SystemUI: add navbar button layout inversion tuning  
-#repopick -c 30 225859; # storage: Do not notify for volumes on non-removable disks  
-#repopick -c 30 226276; # power: Re-introduce custom charging sounds  
-#repopick -c 30 224844; # lockscreen: Add option for showing unlock screen directly  
-#repopick -c 30 225754; # SystemUI: Berry styles  
-#repopick -c 30 225582; # [TEMP]: Revert "OMS: harden permission checks"  
-#repopick -c 30 224446; # SystemUI: Make tablets great again  
-#repopick -c 30 224513; # SystemUI: Disable config_keyguardUserSwitcher on sw600dp  
-#repopick -c 30 226068; # Fix mounting of non-FAT formatted SD cards (1/2)  
+repopick -c 30 225682; # Framework: Volume key cursor control
+repopick -c 30 225683; # PhoneWindowManager: add LineageButtons volumekey hook
+repopick -c 30 225684; # Long-press power while display is off for torch
+repopick -c 30 225693; # SystemUI: add left and right virtual buttons while typing
+repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
+repopick -c 30 225702; # Camera: allow camera to use power key as shutter
+repopick -c 30 225721; # Reimplement hardware keys custom rebinding
+repopick -c 30 226249; # fw/b: Allow customisation of navbar app switch long press action
+repopick -c 30 225722; # Reimplement device hardware wake keys support
+repopick -c 30 225726; # PhoneWindowManager: Tap volume buttons to answer call
+repopick -c 30 225727; # PhoneWindowManager: Implement press home to answer call
+repopick -c 30 225728; # Camera button support
+repopick -c 30 225729; # Framework: Forward port Long press back to kill app (2/2)
+repopick -c 30 225734; # Allow screen unpinning on devices without navbar
+repopick -c 30 226236; # SystemUI: add navbar button layout inversion tuning
+repopick -c 30 225859; # storage: Do not notify for volumes on non-removable disks
+repopick -c 30 226276; # power: Re-introduce custom charging sounds
+repopick -c 30 224844; # lockscreen: Add option for showing unlock screen directly
+repopick -c 30 225754; # SystemUI: Berry styles
+repopick -c 30 225582; # [TEMP]: Revert "OMS: harden permission checks"
+repopick -c 30 224446; # SystemUI: Make tablets great again
+repopick -c 30 224513; # SystemUI: Disable config_keyguardUserSwitcher on sw600dp
+repopick -c 30 226068; # Fix mounting of non-FAT formatted SD cards (1/2)
 
 # frameworks/native
 repopick 224443; # libbinder: Don't log call trace when waiting for vendor service on non-eng builds
@@ -150,11 +147,7 @@ repopick 226392; # LineageParts: Set proper default value for charging sounds
 repopick 223700; # NFC: Adding new vendor specific interface to NFC Service
 
 # packages/apps/Settings
-repopick -c 18 225686; # Settings: Add advanced restart switch
-repopick -c 18 224973; # Settings: gesture: Add LineageParts touchscreen gesture settings
-repopick -c 18 224974; # Settings: Allow devices to provide remote gesture preferences
 repopick -c 18 225730; # Settings: Add kill app back button toggle
-repopick -c 18 225800; # Settings: Add rotation settings
 repopick -c 18 226142; # Settings: Add developer setting for root access
 repopick -c 18 226148; # Settings: "Security 226148; location" -> "Security 226148; privacy"
 repopick -c 18 226150; # Settings: add Trust interface hook
@@ -164,21 +157,17 @@ repopick -c 18 225755; # Settings: Hide AOSP theme-related controllers
 repopick -c 18 225756; # Settings: fix dark style issues
 repopick -c 18 226154; # fingerprint: Allow devices to configure sensor location
 repopick -c 18 225858; # storage: Do not allow eject for volumes on non-removable disks
-repopick -c 18 226391; # Settings: Hide lockdown in lockscreen settings
 repopick -c 18 227120; # Settings: Check interfaces before enabling ADB over network
 
-# packages/services/Telephony
-repopick 225418; # Telephony: Add ERI configuration for U.S. Cellular
-repopick 225420; # Use proper summary for network select list preference on dsds/dsda/tsts
+# packages/providers/MediaProvider
+
+repopick 225412; # Fix mounting of non-FAT formatted SD cards (2/2)
 
 # system/bt
 repopick 225422; # Bluetooth: Read BLE vendor capability to proceed on Secure conn
 repopick 223945; # Prevent abort in case of command timeout
 repopick 225423; # Add support to force disable enhanced sco commands
 repopick 224813; # bt: osi: undef PROPERTY_VALUE_MAX
-
-##### # packages/providers/MediaProvider
-#repopick 225412; # Fix mounting of non-FAT formatted SD cards (2/2)  
 
 ##### # packages/services/Telephony
 repopick 225418; # Telephony: Add ERI configuration for U.S. Cellular  
@@ -194,23 +183,22 @@ repopick 223746; # Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
 repopick 223748; # Build sepolicy tools with Android.bp
 
 # system/vold
-repopick -c 18 225436; # vold: add support for more filesystems for public storage  
-repopick -c 18 225437; # vold: Fix fsck on public volumes  
-repopick -c 18 225438; # vold: Support internal storage partitions  
-repopick -c 18 225439; # vold: Honor mount options for ext4 partitions  
-repopick -c 18 225440; # vold: Honor mount options for f2fs partitions  
-repopick -c 18 225441; # vold: Mount ext4/f2fs portable storage with sdcard_posix  
-repopick -c 18 225442; # vold: ntfs: Use strlcat  
-repopick -c 18 225443; # Treat removable UFS card as SD card  
-##### # repopick -c 18 225444; # vold: dont't use commas in device names  
-repopick -c 18 225445; # vold ext4/f2fs: do not use dirsync if we're mounting adopted storage  
-repopick -c 18 225446; # Fix the group permissions of the sdcard root.  
-repopick -c 18 225447; # vold: skip first disk change when converting MBR to GPT  
-repopick -c 18 225448; # vold: Allow reset after shutdown  
-repopick -c 18 225449; # vold: Accept Linux GPT partitions on external SD cards  
-repopick -c 18 225450; # vold: Make sure block device exists before formatting it  
-repopick -c 18 225451; # vold: Also wait for dm device when mounting private volume  
-repopick -c 18 225452; # secdiscard: should pin_file to avoid moving blocks in F2FS  
+repopick -c 18 225436; # vold: add support for more filesystems for public storage
+repopick -c 18 225437; # vold: Fix fsck on public volumes
+repopick -c 18 225438; # vold: Support internal storage partitions
+repopick -c 18 225439; # vold: Honor mount options for ext4 partitions
+repopick -c 18 225440; # vold: Honor mount options for f2fs partitions
+repopick -c 18 225441; # vold: Mount ext4/f2fs portable storage with sdcard_posix
+repopick -c 18 225442; # vold: ntfs: Use strlcat
+repopick -c 18 225443; # Treat removable UFS card as SD card
+repopick -c 18 225445; # vold ext4/f2fs: do not use dirsync if we're mounting adopted storage
+repopick -c 18 225446; # Fix the group permissions of the sdcard root.
+repopick -c 18 225447; # vold: skip first disk change when converting MBR to GPT
+repopick -c 18 225448; # vold: Allow reset after shutdown
+repopick -c 18 225449; # vold: Accept Linux GPT partitions on external SD cards
+repopick -c 18 225450; # vold: Make sure block device exists before formatting it
+repopick -c 18 225451; # vold: Also wait for dm device when mounting private volume
+repopick -c 18 225452; # secdiscard: should pin_file to avoid moving blocks in F2FS
 
 
 #fix out the legacy sound
