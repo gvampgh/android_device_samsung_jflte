@@ -72,7 +72,6 @@ repopick 224443; # libbinder: Don't log call trace when waiting for vendor servi
 repopick 225546; # AppOpsManager: Update with the new ops
 
 # hardware/libhardware
-repopick 223097; # hardware/libhw: Add display_defs.h to declare custom enums/flags
 repopick -f 223681; # power hints
 
 # hardware/qcom/audio
