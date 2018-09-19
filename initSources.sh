@@ -50,7 +50,7 @@ repopick -c 30 225606; # Forward port 'Swap volume buttons' (1/3)
 repopick -c 30 225702; # Camera: allow camera to use power key as shutter
 repopick -c 30 225721; # Reimplement hardware keys custom rebinding
 repopick -c 30 226249; # fw/b: Allow customisation of navbar app switch long press action
-repopick -c 30 225722; # Reimplement device hardware wake keys support
+#repopick -c 30 225722; # Reimplement device hardware wake keys support
 repopick -c 30 225726; # PhoneWindowManager: Tap volume buttons to answer call
 repopick -c 30 225727; # PhoneWindowManager: Implement press home to answer call
 repopick -c 30 225728; # Camera button support
