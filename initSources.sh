@@ -71,9 +71,6 @@ repopick 224443; # libbinder: Don't log call trace when waiting for vendor servi
 #repopick 225545; # Forward port 'Swap volume buttons' (2/3)
 repopick 225546; # AppOpsManager: Update with the new ops
 
-# hardware/libhardware
-repopick -f 223681; # power hints
-
 # hardware/qcom/audio
 repopick 222693; # msm8960: treblize configuration
 repopick 222694; # audio: Make CVD version retrieval nonfatal with ACDB v1
