@@ -35,7 +35,7 @@
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
-#include "util.h"
+//#include "util.h"
 #include <string>
 
 void gsm_properties();
