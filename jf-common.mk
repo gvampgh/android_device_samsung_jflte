@@ -92,10 +92,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # GPS configs
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/gps.conf:system/vendor/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sap.conf:system/etc/sap.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
+#    $(LOCAL_PATH)/configs/gps.conf:system/vendor/etc/gps.conf \
+#    $(LOCAL_PATH)/configs/sap.conf:system/etc/sap.conf
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
@@ -179,9 +179,9 @@ PRODUCT_PACKAGES += \
     FlipFlap
 
 # GPS HAL
-PRODUCT_PACKAGES += \
-    gps.msm8960 \
-    gps.conf
+#PRODUCT_PACKAGES += \
+#    gps.msm8960 \
+#    gps.conf
 
 # Filesystem tools
 PRODUCT_PACKAGES += \

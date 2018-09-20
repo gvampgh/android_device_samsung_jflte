@@ -48,9 +48,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service
 
 # GPS HIDL
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.gnss@1.0-impl \
+#    android.hardware.gnss@1.0-service
 
 # IR HIDL
 PRODUCT_PACKAGES += \
