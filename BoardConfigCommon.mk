@@ -167,7 +167,7 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # RIL
-#BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_LIBRIL := true
 
 # SDClang
 #TARGET_USE_SDCLANG := true
@@ -179,6 +179,10 @@ BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # SU
 WITH_SU := true
+
+# Vendor Init
+TARGET_INIT_VENDOR_LIB := libinit_jflte
+TARGET_LIBINIT_DEFINES_FILE := $(COMMON_PATH)/init/init_jflte.cpp
 
 # Wifi module
 BOARD_WLAN_DEVICE := bcmdhd
