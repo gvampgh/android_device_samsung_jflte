@@ -139,4 +139,6 @@ repopick 223748; # Build sepolicy tools with Android.bp.
 sed -i 's/ENODEV/19/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy.cpp
 sed -i 's/ENOSYS/38/g' frameworks/av/services/soundtrigger/SoundTriggerHalLegacy.cpp
 
-
+cp -R device/samsung/jf-common/0001-libsuspend-Bring-back-earlysuspend.patch system/core/0001-libsuspend-Bring-back-earlysuspend.patch
+cd system/core && git apply 0001-libsuspend-Bring-back-earlysuspend.patch
+cd ../..
