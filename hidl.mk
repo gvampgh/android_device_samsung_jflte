@@ -17,23 +17,20 @@
 # Audio HIDL
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@2.0-impl
 
 # Bluetooth HIDL interfaces
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth@1.0-service
+    android.hardware.bluetooth@1.0-impl
 
 # Camera HIDL
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl-legacy \
     camera.device@1.0-impl-legacy
 
-# Configstore
+# RenderScript
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.0-impl \
-    android.hardware.configstore@1.0-service
+    android.hardware.renderscript@1.0-impl
 
 # Display HIDL
 PRODUCT_PACKAGES += \
@@ -50,38 +47,32 @@ PRODUCT_PACKAGES += \
 
 # GPS HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl \
-    android.hardware.gnss@1.0-service
+    android.hardware.gnss@1.0-impl
 
 # IR HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
+    android.hardware.ir@1.0-impl
 
 # Keymaster HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    android.hardware.keymaster@3.0-impl
 
 # Lights HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service
+    android.hardware.light@2.0-impl
+
+# NFC HIDL
+#PRODUCT_PACKAGES += \
+#    android.hardware.nfc@1.0-impl-bcm \
+#    android.hardware.nfc@1.0-service
 
 # Power HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.0 \
-    android.hardware.radio.deprecated@1.0
+    android.hardware.power@1.1-service-qti
 
 # Sensors HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    sensors.msm8960
+    android.hardware.sensors@1.0-impl
 
 # USB HIDL
 PRODUCT_PACKAGES += \
@@ -89,11 +80,8 @@ PRODUCT_PACKAGES += \
 
 # Vibrator HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
+    android.hardware.vibrator@1.0-impl
 
 # WiFi HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service
-

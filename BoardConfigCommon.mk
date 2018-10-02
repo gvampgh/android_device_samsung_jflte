@@ -25,10 +25,12 @@ COMMON_PATH := device/samsung/jf-common
 # Inherit from qcom-common
 -include device/samsung/qcom-common/BoardConfigCommon.mk
 
-# Shipping api level, 17= Android 4.2.2
+# Shipping api level, 17 = Android 4.2.2
 PRODUCT_SHIPPING_API_LEVEL := 17
 
+# Includes
 TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
+
 # ADB
 TARGET_USES_LEGACY_ADB_INTERFACE := true
 
@@ -67,17 +69,16 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 BOARD_CUSTOM_BOOTIMG := true
 BOARD_CUSTOM_BOOTIMG_MK := hardware/samsung/mkbootimg.mk
 
-TARGET_EXFAT_DRIVER := sdfat
+TARGET_EXFAT_DRIVER := exfat
 
 # Toolchain
 #KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linaro-linux-androideabi-7.2/bin
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Audio
-USE_CUSTOM_AUDIO_POLICY := true
-USE_LEGACY_AUDIO_POLICY := true
+BOARD_USES_ALSA_AUDIO := true
 BOARD_HAVE_SAMSUNG_CSDCLIENT := true
-USE_LEGACY_LOCAL_AUDIO_HAL := true
+USE_CUSTOM_AUDIO_POLICY := 1
 
 # Binder
 TARGET_USES_64_BIT_BINDER := true
@@ -96,28 +97,24 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
 BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/vnd_jf.txt
-BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
 # Camera
 TARGET_PROVIDES_CAMERA_HAL := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
-
-# dexpreopt
-WITH_DEXPREOPT := true
-WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := true
 
 # Legacy hacks
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
+    /system/bin/mediaserver=22 \
+    /system/vendor/bin/mm-qcamera-daemon=22
 
 # Charger
-BOARD_BATTERY_DEVICE_NAME := "battery"
-BOARD_CHARGING_CMDLINE_NAME := "androidboot.bootchg"
-BOARD_CHARGING_CMDLINE_VALUE := "true"
 BOARD_CHARGER_ENABLE_SUSPEND := true
-BOARD_CHARGER_SHOW_PERCENTAGE := true
+
+# Power
+TARGET_HAS_NO_WLAN_STATS := true
 
 # LineageHW
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(COMMON_PATH)/lineagehw|**/*.java
@@ -128,16 +125,12 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
 # Fonts
-EXTENDED_FONT_FOOTPRINT := true
 EXCLUDE_SERIF_FONTS := true
 
 # GPS
 #BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 #BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 #TARGET_NO_RPC := true
-
-# Includes
-TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 
 # NFC
 #BOARD_NFC_HAL_SUFFIX := msm8960
@@ -151,18 +144,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1181114368
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 28651290624
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-#qcom power
-TARGET_HAS_NO_WLAN_STATS  := true
-BOARD_USES_QCOM_HARDWARE := true
-# Power
-TARGET_POWERHAL_VARIANT := qcom
-
-# QCOM-perf properties
-#PRODUCT_PROPERTY_OVERRIDES += \
-#	ro.vendor.extension_library=libqti-perfd-client.so
-	
 # Runtime
-ANDROID_NO_TEST_CHECK := true # Don't try to build and run all tests by default. 
+ANDROID_NO_TEST_CHECK := true # Don't try to build and run all tests by default.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_ALWAYS_PREOPT_EXTRACTED_APK := true
@@ -183,10 +166,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #include device/qcom/sepolicy/legacy-sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
-
-# SU
-WITH_SU := true
+#BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy
 
 # Wifi module
 BOARD_WLAN_DEVICE := bcmdhd
@@ -201,5 +181,9 @@ WIFI_DRIVER_FW_PATH_AP := "/system/etc/wifi/bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_OPERSTATE_PATH := "/sys/class/net/wlan0/operstate"
+
+
+# SU
+WITH_SU := true
 
 ALLOW_MISSING_DEPENDENCIES := true

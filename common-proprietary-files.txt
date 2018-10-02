@@ -148,7 +148,7 @@ vendor/bin/radish
 
 # Sensors
 vendor/lib/hw/sensorhubs.msm8960.so
-vendor/lib/sensors.vendor.msm8960.so 
+vendor/lib/sensors.vendor.msm8960.so
 vendor/lib/libgnustl_shared.so
 vendor/lib/libsam.so
 vendor/lib/libsensirion_j1.so
@@ -175,4 +175,3 @@ etc/wifi/bcmdhd_sta.bin
 etc/wifi/cred.conf
 etc/wifi/nvram_mfg.txt
 etc/wifi/nvram_net.txt
-

@@ -21,13 +21,9 @@
      for different hardware and product builds. -->
 <resources>
 
- 
     <!-- Default value for led color when battery is medium charged -->
     <!-- The green LED is brighter than red, bias closer to yellow. -->
     <integer name="config_notificationsBatteryMediumARGB">0xFFFF6000</integer>
-
-  
-
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
          USB interfaces.  If the device doesn't want to support tething over USB this should
@@ -36,9 +32,6 @@
         <item>"rndis0"</item>
         <item>"usb0"</item>
     </string-array>
-
-  
-
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
@@ -59,7 +52,6 @@
         <item>20</item>
     </integer-array>
 
-  
     <!-- Disable the home key unlock setting -->
     <!-- <bool name="config_disableHomeUnlockSetting">false</bool> -->
 
@@ -149,9 +141,4 @@
 
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">true</bool>
-
-
-
-
-
 </resources>

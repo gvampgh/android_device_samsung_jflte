@@ -59,9 +59,9 @@ on fs
     # default country code
     setprop ro.boot.wificountrycode 00
 
-on post-fs 
+on post-fs
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
-    
+
 on post-fs-data
     # Create directories for tombstone
     mkdir /data/tombstones 0771 system system
@@ -398,7 +398,7 @@ on property:persist.sys.camera.preview=1
     write /sys/class/leds/led_b/brightness 40
 
 on property:persist.sys.camera.preview=0
-    write /sys/class/leds/led_b/brightness 0  
+    write /sys/class/leds/led_b/brightness 0
 
 on property:init.svc.media=restarting
     restart qcamerasvr

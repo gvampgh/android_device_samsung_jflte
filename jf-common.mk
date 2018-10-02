@@ -30,8 +30,6 @@ $(call inherit-product, device/samsung/jf-common/hidl.mk)
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -116,19 +114,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/bluetooth/bcm4335_prepatch.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335_prepatch.hcd
 
-# HIDL manifest
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml \
-    $(LOCAL_PATH)/compatibility_matrix.xml:system/vendor/compatibility_matrix.xml
-
 # SPN override
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/selective-spn-conf.xml:system/vendor/etc/selective-spn-conf.xml
 
 # Seccomp policy
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-#    $(LOCAL_PATH)/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
+    $(LOCAL_PATH)/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 # Thermal
 PRODUCT_COPY_FILES += \
@@ -140,6 +133,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+
+# Sensors
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -169,6 +166,10 @@ PRODUCT_PACKAGES += \
     gralloc.msm8960 \
     hwcomposer.msm8960 \
     memtrack.msm8960
+
+# Sensors
+PRODUCT_PACKAGES += \
+    sensors.msm8960
 
 # Doze
 #PRODUCT_PACKAGES += \
@@ -241,17 +242,6 @@ PRODUCT_PACKAGES += \
     init.spectrum.sh \
     ueventd.qcom.rc
 
-PRODUCT_PACKAGES += \
-	power.msm8960
-	
-# USB HIDL
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.jf
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
-
 # Shim
 PRODUCT_PACKAGES += \
     libshim_camera
@@ -263,7 +253,6 @@ PRODUCT_PACKAGES += \
 # Qualcomm
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
-
 
 # Weather providers
 PRODUCT_PACKAGES += \
@@ -281,11 +270,10 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf
 
-
 # call common jf system props
 $(call inherit-product, device/samsung/jf-common/system_prop.mk)
 
-# Make device completely debuggable 
+# Make device completely debuggable
 $(call inherit-product, device/samsung/jf-common/debuggable.mk)
 
 # Common Qualcomm

@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.audio.fluencetype=fluence \
     use.dedicated.device.for.voip=true \
     use.voice.path.for.pcm.voip=false
-   
+
 # ART
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
@@ -40,7 +40,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Charger
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable_boot_charger_mode=1
-
 
 # Dex
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -73,7 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.dalvik.vm.native.bridge=0 \
     ro.kernel.android.checkjni=0 \
     ro.kernel.checkjni=0
-    
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.hwui.use_buffer_age=false \
@@ -89,9 +88,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.gps.agps_provider=1 \
-	ro.qc.sdk.izat.premium_enabled=0 \
-	ro.qc.sdk.izat.service_mask=0x0 \
+    ro.gps.agps_provider=1 \
+    ro.qc.sdk.izat.premium_enabled=0 \
+    ro.qc.sdk.izat.service_mask=0x0 \
     persist.gps.qc_nlp_in_use=1
 
 # Media
@@ -122,11 +121,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
    ro.ril.disable.power.collapse=0 \
    pm.sleep_mode=1 \
    rild.libpath=/system/vendor/lib/libril-qc-qmi-1.so
-   
+
 # Sleeping props
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.config.hw_power_saving=true \
-   ro.ril.sensor.sleep.control=1 \
+   ro.ril.sensor.sleep.control=1
 
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -143,5 +142,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # WiFi
 PRODUCT_PROPERTY_OVERRIDES += \
    wifi.interface=wlan0
-    
-    
