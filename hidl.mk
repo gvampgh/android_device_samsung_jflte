@@ -22,7 +22,8 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth HIDL interfaces
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-impl
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service
 
 # Camera HIDL
 PRODUCT_PACKAGES += \
@@ -48,9 +49,9 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service
 
 # GPS HIDL
-#PRODUCT_PACKAGES += \
-#    android.hardware.gnss@1.0-impl \
-#    android.hardware.gnss@1.0-service
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
+    android.hardware.gnss@1.0-service
 
 # IR HIDL
 PRODUCT_PACKAGES += \
@@ -67,19 +68,15 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service
 
-# NFC HIDL
-#PRODUCT_PACKAGES += \
-#    android.hardware.nfc@1.0-impl-bcm \
-#    android.hardware.nfc@1.0-service
-
 # Power HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.1-service-qti
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service
 
 # Radio
-#PRODUCT_PACKAGES += \
-#    android.hardware.radio@1.0 \
-#    android.hardware.radio.deprecated@1.0
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.0 \
+    android.hardware.radio.deprecated@1.0
 
 # Sensors HIDL
 PRODUCT_PACKAGES += \
@@ -97,5 +94,6 @@ PRODUCT_PACKAGES += \
 
 # WiFi HIDL
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-impl \
     android.hardware.wifi@1.0-service
 
