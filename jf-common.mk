@@ -241,6 +241,9 @@ PRODUCT_PACKAGES += \
     init.spectrum.sh \
     ueventd.qcom.rc
 
+PRODUCT_PACKAGES += \
+	power.msm8960
+	
 # USB HIDL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.jf

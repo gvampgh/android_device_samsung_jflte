@@ -154,6 +154,9 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 #qcom power
 TARGET_HAS_NO_WLAN_STATS  := true
 BOARD_USES_QCOM_HARDWARE := true
+# Power
+TARGET_POWERHAL_VARIANT := qcom
+
 # QCOM-perf properties
 #PRODUCT_PROPERTY_OVERRIDES += \
 #	ro.vendor.extension_library=libqti-perfd-client.so
