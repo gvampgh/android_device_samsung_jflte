@@ -153,8 +153,11 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 
 #qcom power
 TARGET_HAS_NO_WLAN_STATS  := true
-
-
+BOARD_USES_QCOM_HARDWARE := true
+# QCOM-perf properties
+#PRODUCT_PROPERTY_OVERRIDES += \
+#	ro.vendor.extension_library=libqti-perfd-client.so
+	
 # Runtime
 ANDROID_NO_TEST_CHECK := true # Don't try to build and run all tests by default. 
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
