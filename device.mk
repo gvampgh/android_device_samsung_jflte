@@ -227,7 +227,6 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    android.hardware.wifi@1.0-impl \
     hostapd \
     libwpa_client \
     wificond \
@@ -313,3 +312,5 @@ $(call inherit-product, hardware/samsung/Android.mk)
 
 # Also get non-open-source specific aspects if available
 $(call inherit-product, vendor/samsung/jf-common/jf-common-vendor-blobs.mk)
+
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
