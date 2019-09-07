@@ -246,11 +246,11 @@ PRODUCT_PACKAGES += \
     mkfs.f2fs
 
 # Loki
-PRODUCT_PACKAGES_ENG += \
-    loki_tool \
-    loki.sh \
-    loki_bootloaders \
-    recovery-transform.sh
+#PRODUCT_PACKAGES_ENG += \
+#    loki_tool \
+#    loki.sh \
+#    loki_bootloaders \
+#    recovery-transform.sh
 
 # Doze
 #PRODUCT_PACKAGES += \
