@@ -228,8 +228,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-service.jf
 
 # Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.jf
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.touch@1.0-service.jf
 
 # Health HAL
 PRODUCT_PACKAGES += \
