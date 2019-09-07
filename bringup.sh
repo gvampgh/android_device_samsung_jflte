@@ -20,3 +20,7 @@ cd ../..
 # for media: add breaks to switching
 # for display: both byte references are correct but we need to clear it out-> 
 # change name of the typedef in the .h , to a custom one. also change the declaration of m_XXXXX
+
+#hardware/qcom/display-caf/msm8960/libhwcomposer/hwc.cpp:422:5: error: unannotated fall-through between switch labels [-Werror,-Wimplicit-fallthrough]
+#    case HWC_DISPLAY_VIRTUAL:
+#i would use -Wno-implicit-fallthrough though to the libhwcomposer
