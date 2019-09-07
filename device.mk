@@ -72,18 +72,6 @@ PRODUCT_COPY_FILES += \
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-# Ramdisk
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/fstab.qcom:/vendor/etc/fstab.qcom \
-    $(LOCAL_PATH)/rootdir/init.qcom.power.rc:vendor/etc/init/hw/init.qcom.power.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.power.rc:vendor/etc/init/hw/init.recovery.qcom.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.rc:vendor/etc/init/hw/init.qcom.rc \
-    $(LOCAL_PATH)/rootdir/init.qcom.usb.rc:vendor/etc/init/hw/init.qcom.usb.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.qcom.rc:$(TARGET_ROOT_OUT)/ueventd.qcom.rc \
-    $(LOCAL_PATH)/rootdir/init.spectrum.sh:vendor/etc/init/hw/init.spectrum.sh \
-    $(LOCAL_PATH)/rootdir/init.spectrum.rc:vendor/etc/init/hw/init.spectrum.rc \
-    $(LOCAL_PATH)/rootdir/init.safailnet.rc:vendor/etc/init/hw/init.safailnet.rc
-
 # WPA supplicant overlay files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
