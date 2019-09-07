@@ -159,11 +159,11 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Camera
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl.jf \
-    camera.device@1.0-impl.jf \
-    camera.msm8960 \
-    Snap
+#PRODUCT_PACKAGES += \
+#    android.hardware.camera.provider@2.4-impl.jf \
+#    camera.device@1.0-impl.jf \
+#    camera.msm8960 \
+#    Snap
 
 # Trust
 PRODUCT_PACKAGES += \
@@ -277,8 +277,8 @@ PRODUCT_PACKAGES_ENG += \
 #    SamsungDoze
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+#PRODUCT_PACKAGES += \
+#    Snap
 
 # FlipFlap
 PRODUCT_PACKAGES += \
