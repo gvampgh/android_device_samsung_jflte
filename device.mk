@@ -273,8 +273,8 @@ PRODUCT_PACKAGES_ENG += \
     recovery-transform.sh
 
 # Doze
-PRODUCT_PACKAGES += \
-    SamsungDoze
+#PRODUCT_PACKAGES += \
+#    SamsungDoze
 
 # Camera
 PRODUCT_PACKAGES += \
