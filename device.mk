@@ -206,8 +206,8 @@ PRODUCT_PACKAGES += \
 
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.jf
+#PRODUCT_PACKAGES += \
+#    vendor.lineage.livedisplay@2.0-service.jf
 
 # IR package
 PRODUCT_PACKAGES += \
