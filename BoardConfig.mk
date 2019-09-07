@@ -54,7 +54,7 @@ TARGET_KERNEL_SOURCE := kernel/samsung/jf
 TARGET_KERNEL_CONFIG := jdc_jf_defconfig
 TARGET_KERNEL_VARIANT_CONFIG := jf_eur_defconfig
 
-TEMPORARY_DISABLE_PATH_RESTRICTIONS:=true
+TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
 # Toolchain
 #KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/arm/arm-linux-7.1.x-gnueabi/bin
 #TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-Samsung-linux-gnueabi-
@@ -68,6 +68,7 @@ BOARD_HAVE_SAMSUNG_CSDCLIENT := true
 BOARD_USES_ALSA_AUDIO := true
 #USE_CUSTOM_AUDIO_POLICY := 1
 TARGET_USE_OLD_SOUND_PICKER := true
+USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
@@ -95,6 +96,7 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vendor_interface/compatibility_matrix.xml
 #TARGET_NEED_SAMSUNG_CAMERA_MODE := true
 #TARGET_NEED_CAMERA_ZSL := true
 #TARGET_DISPLAY_INSECURE_MM_HEAP := true
+
 
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=22 \

@@ -12,3 +12,6 @@ cd ../..
 
 
 #vendor/lineage/build/tools/repopick.py -t ten-build-bringup
+
+# for soong (path disallow shit) : return Allowed to  func GetConfig(name string) PathConfig {
+# ui/build/paths/config.go
