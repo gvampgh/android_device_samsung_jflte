@@ -15,3 +15,8 @@ cd ../..
 
 # for soong (path disallow shit) : return Allowed to  func GetConfig(name string) PathConfig {
 # ui/build/paths/config.go
+
+#for caf hardware
+# for media: add breaks to switching
+# for display: both byte references are correct but we need to clear it out-> 
+# change name of the typedef in the .h , to a custom one. also change the declaration of m_XXXXX
