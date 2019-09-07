@@ -187,8 +187,8 @@ MAX_EGL_CACHE_SIZE := 2048*1024
 ANDROID_NO_TEST_CHECK := true
 
 # Include SE policy
-include device/qcom/sepolicy-legacy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+#include device/qcom/sepolicy-legacy/sepolicy.mk
+#BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 ifeq ($(WITH_TWRP),true)
 -include $(COMMON_PATH)/twrp.mk
