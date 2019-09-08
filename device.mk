@@ -126,6 +126,18 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libstagefrighthw
 
+# Ramdisk 
+PRODUCT_PACKAGES += \
+    init.qcom.power.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    ueventd.qcom.rc
+
+# Fstab
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
+    $(LOCAL_PATH)/rootdir/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
 # Camera
 #PRODUCT_PACKAGES += \
 #    android.hardware.camera.provider@2.4-impl.jf \
