@@ -70,6 +70,10 @@ on fs
 on post-fs
     # Allow writing to the kernel trace log.
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
+    
+    # Avoid USB crash
+    setprop persist.adb.nonblocking_ffs 0
+    setprop ro.adb.nonblocking_ffs 0
 
 on post-fs-data
     # Create the directories used by the Wireless subsystem
