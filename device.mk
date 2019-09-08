@@ -194,6 +194,29 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     consumerir.msm8960
 
+
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    audio.a2dp.default \
+    audio.primary.msm8960 \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaudio-resampler \
+    libqcomvoiceprocessing \
+    tinyplay \
+    tinycap \
+    tinymix \
+    tinypcminfo
+    
+# audio 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    $(COMMON_PATH)/audio/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
+    $(COMMON_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
+    $(COMMON_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+
 # NFC packages
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl-bcm \
