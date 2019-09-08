@@ -1,1 +1,1 @@
-export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true && make clean && . build/envsetup.sh && lunch lineage_jflte-userdebug && make -j10 otapackage
+export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true && export CCACHE_EXEC=$(which ccache) && make clean && . build/envsetup.sh && lunch lineage_jflte-userdebug && make -j10 otapackage
