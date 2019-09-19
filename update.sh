@@ -79,54 +79,6 @@ repopick 258224 # Camera: Add extensions to CameraClient
 repopick 258437 # Camera: Add support for preview frame fd
 repopick 258439 # stagefright: add changes related to high-framerates in CameraSource
 
-# frameworks/base
-#repopick 258530 # Use UnlockMethodCache#canSkipBouncer in user switcher
-repopick 258159 # frameworks: base: Port password retention feature
-repopick 258180 # Fix Build Credentials refactored to use byte[]
-repopick 258160 # LockSettingsService: Support for separate clear key api
-repopick 255684 # storage: Set all sdcards to visible
-repopick 256163 # Configurable 0, 90, 180 and 270 degree rotation
-repopick 256164 # SystemUI: Fix toggling lockscreen rotation [1/3]
-repopick 256185 # Enable Binder Proxy Tracking by Uid only on eng builds
-repopick 256186 # SystemUI: Add support for persistent usb drive notification.
-repopick 256291 # Support enforcing a minimum delay between notification sounds of an app
-repopick 256596 # frameworks/base: Support for third party NFC features and extensions
-repopick 255646 # Revert "DO NOT MERGE Remove Privacy Indicators"
-repopick 255648 # Revert "DO NOT MERGE Revert "Adding the privacy chip to the CarStatusBar""
-repopick 255649 # PrivacyItemController: Enable permission hub by default
-repopick 257008 # SystemUI: Apply system_icons_keyguard_padding_end to parent view
-repopick 256830 # audio: Don't play sound effects if stream is muted
-repopick 256922 # Initial support for in-display fingerprint sensors
-repopick 256446 # SystemUI: Enable and fix QS detail view, adapt layout to Pie
-repopick 256447 # SystemUI: Add Profiles tile
-repopick 256448 # SystemUI: Advanced location tile
-repopick 257148 # PackageManager: Add configuration to specify vendor platform signatures
-repopick 256831 # KernelCpuUidTimeReader: Decrease log level on eng builds
-repopick 257151 # Camera: allow camera to use power key as shutter
-repopick 258225 # Camera: Add feature extensions
-repopick 258298 # LiveDisplayTile: Enable for outdoor mode and skip night display on HWC2
-repopick 258303 # power: Re-introduce custom charging sounds
-repopick 258228 # Correction in logic of roundend size calculation of SD card
-repopick 258301 # Forward port CM Screen Security settings (1/2)
-repopick 258504 # frameworks: Add unlinked ringtone and notification volumes
-repopick 258235 # Allow adjusting screen density to smaller sizes.
-repopick 258471 # Reintroduce button-backlight (and respective inactivity timeout)
-repopick 258472 # power: Disable keyboard/button lights while dozing/dreaming
-repopick 258473 # PowerManager: Re-integrate button brightness
-repopick 257302 # PowerManager: Add proximity check on wake
-repopick 258474 # PowerManagerService: Allow to light up buttons only when pressed
-repopick 258475 # PowerManager: Allow to distinguish different keypresses
-repopick 258476 # Add support for runtime toggle of navbar
-repopick 258477 # Framework: Volume key cursor control
-repopick 258478 # PhoneWindowManager: add LineageButtons volumekey hook
-repopick 258479 # Long-press power while display is off for torch
-repopick 258480 # Reimplement hardware keys custom rebinding
-repopick 256016 # Revert "Disable custom clock faces in SystemUI"
-repopick 256015 # Revert "Disable ClockOptionsProvider so clocks don't appear in picker app"
-repopick 255650 # Revert "Drop final remnants of Type clock face"
-repopick 255647 # Revert "Drop Type clock face."
-repopick 255651 # TypeClockController: Make it compile with new plugin API
-repopick 256192 # [DNM] IS_DEBUGGABLE -> IS_ENG
 
 # frameworks/native
 repopick 256923 # libui: Allow extension of valid gralloc 1.0 buffer usage bits
@@ -290,48 +242,6 @@ repopick 257297 # Exchange: Migrate to androidx
 repopick 256598 # LineageParts: Inject Trust into privacy settings
 repopick 256409 # LineageParts: Reenable DisplayRotation
 
-# packages/apps/Messaging
-repopick 256720 # Messaging: Fix generating id in android namespace
-repopick 257324 # AOSP/Messaging - Update the Messaging version to 24 until notification related logic changes are made. Fixes the error "Developer warning for package com.android. messaging failed to post notification on channel null".
-repopick 257325 # AOSP/Messaging - Remove TEST_MAPPING because presubmit tests fail on build_target: aosp_cf_x86_phone-userdebug
-repopick 257326 # AOSP/Messaging - Moved LOCAL_COMPATIBILITY_SUITE to tests/Android.mk. + Deleted the unnecessary blankId check. Updated the TODO comment for NUM_TEST_CONVERSATIONS+4. + Added AndroidTest.xml + Added "LOCAL_PROGUARD_ENABLED := disabled" for tests to pass on cf.
-repopick 257327 # AOSP/Messaging - Fix many improperly formatted resource strings in Messaging.
-repopick 257328 # Fix X-Mms-Transaction-ID of M-Acknowledge.ind
-repopick 257329 # Fix SMS status handling
-repopick 257330 # Use correct format info for SMS
-repopick 257331 # Fix MMS Config issues in Debug menu
-repopick 257332 # Fix assertion failures caused by different instance type
-repopick 257333 # Fix wrong PreferenceCategory for SMS delivery report
-repopick 257334 # Apply new duplication detection logic for M-Notification.ind
-repopick 257335 # Replace no error code '0' for SMS with '-1'
-repopick 257336 # Fix GetOrCreateConversationActionTest failure
-repopick 257337 # Sort ParticipantsData in order of the slot id
-repopick 257338 # Ignore unexpected ACTION_DOWN for SIM avatar icons
-repopick 257339 # Fix FATAL EXCEPTION on SmsStorageLowWarningActivity
-repopick 257340 # Move Messaging to /product
-repopick 257341 # Move libgiftranscode.so to /product
-repopick 256696 # Messaging: define app category
-repopick 256697 # Messaging: adaptive icon
-repopick 256698 # Messaging: Implement option for swipe right to delete.
-repopick 256699 # Messaging: change Avatar fontFamily to sans-serif-medium
-repopick 256700 # MessageQueue: Process pending messages per subscription
-repopick 256701 # Messaging: Toggable keyboard emoticons access
-repopick 256702 # Fix menu item highlight color.
-repopick 256704 # Messaging: bring back accent color
-repopick 256705 # Messaging: Implement saved video attachments in MMS
-repopick 256706 # Play an audible notification on receiving a class zero message.
-repopick 256707 # Added support for video and audio mms attachments
-repopick 256708 # Fixed storage permission issue for attachments
-repopick 256709 # Messaging app crashes after a few MMS
-repopick 256711 # Messaging: fix bad recycle on sending two mms in a row
-repopick 256712 # MediaPicker: Check for NPE
-repopick 256713 # Messaging: Don't crash on unsupported shared content type
-repopick 256714 # Messaging: Fix crash of blocked participant list activity
-repopick 256715 # Messaging: Add "Mark as read" quick action for message notifications
-repopick 256716 # Allow intent shared subject or title to be mms subject
-repopick 256718 # Messaging: use white nav bar
-repopick 257342 # Don't build with platform certificate
-repopick 257343 # Messaging: Implement per conversation channels
 
 # packages/apps/Nfc
 repopick 256595 # NFC: Adding new vendor specific interface to NFC Service
