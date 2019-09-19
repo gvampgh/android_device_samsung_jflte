@@ -285,8 +285,6 @@ repopick 257362 # Revert "Revert "AOSP/Email - Bump targetSdkVersion to 28.""
 # packages/apps/Exchange
 repopick 257297 # Exchange: Migrate to androidx
 
-# packages/apps/FlipFlap
-repopick 255432 # FlipFlap: Migrate to androidx
 
 # packages/apps/LineageParts
 repopick 256598 # LineageParts: Inject Trust into privacy settings
